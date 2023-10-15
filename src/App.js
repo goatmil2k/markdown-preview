@@ -1,19 +1,10 @@
 import './App.css';
 import React from 'react';
-import ReactMarkdown from 'react-markdown'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Toolbar from './components/Toolbar';
 import Previewer from './components/Markdown';
 
 
-
-/*const store = configureStore({
-  reducer: mainReducer
-})*/
-
-const demoText = `
-
-`
 
 class Editor extends React.Component {
   constructor(props) {
