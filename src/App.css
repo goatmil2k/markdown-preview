@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +22,129 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+body {
+  background-color: #61dafb;
+}
+
+.editorWrap {
+  max-width: 600px;
+  margin: 1.125rem auto;
+}
+
+.previewWrap {
+  max-width: 800px;
+  margin: 1.125rem auto;
+  min-height: 200px;
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 850px) {
+  .editorWrap {
+    max-width: 550px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .previewWrap {
+    max-width: 630px;
   }
+}
+
+@media screen and (max-width: 650px) {
+  .editorWrap {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .previewWrap {
+    width: 90vw;
+  }
+
+  .maximized {
+    width: 90vw;
+    margin: auto;
+  }
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  background-color: #3b7b2e;
+  padding: 0.3rem;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  font-family: Russo One;
+  font-size: 1rem;
+  color: black;
+}
+
+.toolbar i {
+  width: 25px;
+  margin-left: 5px;
+}
+
+.fa {
+  display: inline-block;
+  text-rendering: auto;
+  background-color: inherit;
+}
+
+.fa-free-code-camp {
+  margin-right: 3px;
+}
+
+.toolbar .fa-arrows-alt {
+  margin-left: auto;
+}
+
+.fa-arrows-alt:hover {
+  color: #d4ffcc;
+}
+
+.editorWrap textarea {
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: -5px;
+  resize: vertical;
+  outline: none;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 0.875rem;
+}
+
+
+
+.previewWrap, .editorWrap, textarea {
+  background-color: #d4ffcc;
+  border: 1px solid 1d2f2f;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  border-top: none;
+}
+
+#preview {
+  padding: 0 1rem;
+}
+
+#preview img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+#preview h1, h2, h3 {
+  border-bottom: 2px solid black;
+}
+
+code {
+  background-color: white;
+}
+
+.maximized {
+  width: 96%;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.maximized textarea {
+  min-height: 95vh;
+  resize: none;
 }
