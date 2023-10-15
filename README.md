@@ -1,4 +1,3 @@
-# Getting Started with Create React App
 # Markdown Previwer Made With React Library
 
 ### A mini-project from freeCodeCamp to get familiar with react syntax
