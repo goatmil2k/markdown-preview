@@ -35,7 +35,7 @@ class Editor extends React.Component {
           <div>
               <div className="editorWrap">
                 <Toolbar toolbarname={"Editor"} />
-                <textarea onChange={this.handleChange} className='editor'>{this.state.input}</textarea>
+                <textarea onChange={this.handleChange} id='editor'>{this.state.input}</textarea>
               </div>
               <div className="previewWrap hide">
                 <Toolbar toolbarname="Previewer" />

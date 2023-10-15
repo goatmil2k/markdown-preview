@@ -3,7 +3,7 @@
 
 ### A mini-project from freeCodeCamp to get familiar with react syntax
 
-### Run the app in locally 
+### Run the app locally 
 
 ### `cd markdown-preview`
 ### `npm start`
