@@ -28,7 +28,7 @@ class Toolbar extends React.Component {
                 <i className="fa fa-free-code-camp" title="no-stack-dub-sack"></i>
                 {this.props.toolbarname}
                 <i
-                    ref={(icon) => this.iconRef = icon} // Create a ref for the <i> element
+                    ref={(icon) => this.iconRef = icon}
                     className="fa fa-arrows-alt"
                     onClick={this.changeView}
                 ></i>
