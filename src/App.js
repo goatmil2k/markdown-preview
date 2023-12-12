@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Toolbar from './components/Toolbar';
 import Previewer from './components/Markdown';
 
